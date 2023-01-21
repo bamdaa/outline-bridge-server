@@ -1,6 +1,6 @@
 # Outline Bridge Server
 
-This repository contains Docker Compose files to run the V2Ray proxy as a bridge server for the Outline proxy.
+This repository contains Docker Compose files to run the V2Ray proxy as a bridge server for the Outline shadowsocks proxy.
 It helps the Outline proxy to work in highly restricted networks without direct/safe/stable access to Outline servers.
 
 ## Documentation
