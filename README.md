@@ -1,15 +1,15 @@
 # Outline Bridge Server
 
-This repository contains Docker Compose files to run the V2Ray proxy as a bridge server for the Outline shadowsocks proxy.
-It helps the Outline proxy to work in highly restricted networks without direct/safe/stable access to Outline servers.
+This repository includes Docker Compose files for running the V2Ray proxy as a bridge server for the Outline proxy.
+Its purpose is to enable the Outline proxy to function effectively in severely restricted networks where direct, secure, and reliable access may not be available.
 
 ## Documentation
 
 ### Outline
 
-[Outline](https://getoutline.org) is a Shadowsocks-based proxy created by Google.
-It lets you create and manage Shadowsocks servers easily.
-Outline clients are also well-designed applications available for all platforms.
+[Outline](https://getoutline.org), developed by Google, is a user-friendly proxy based on Shadowsocks.
+It simplifies the process of creating and managing Shadowsocks servers.
+Additionally, Outline offers well-designed client applications that are compatible with various platforms.
 
 It usually works as below.
 
@@ -21,9 +21,8 @@ Read the [Outline official documentation](https://getoutline.org/get-started) to
 
 ### V2Ray as Bridge Server
 
-The bridge server will be inserted between clients and a server to connect the clients to the server
-in networks where this direct connection is not possible/safe/stable.
-It runs a V2Ray proxy to pass the incoming Shadowsocks traffic (TCP and UDP) from clients to the Outline server.
+The bridge server acts as an intermediary between clients and a server, facilitating the connection between the two in cases where a direct, secure, or stable connection is not feasible.
+It operates a V2Ray proxy to efficiently transmit incoming Shadowsocks traffic (both TCP and UDP) from clients to the Outline server.
 
 The bridge server changes the flow as below.
 
