@@ -4,7 +4,6 @@ services:
   v2ray:
     image: ghcr.io/getimages/v2fly-core:v4.45.2
     restart: always
-    container_name: my-container-name
     ports:
       - ${V2RAY_PORT:-1000}:1000
       - ${V2RAY_PORT:-1000}:1000/udp
